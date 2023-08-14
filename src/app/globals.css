@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #06283D;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  transition: all ease 300ms;
+  position: relative;
+  background-color: white;
+  width: 60vh;
+  height: 11vh;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.container-tall{
+  transition: all ease 300ms;
+  position: relative;
+  background-color: white;
+  width: 60vh;
+  height: 80vh;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.search-bar {
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.search-bar input{
+  border-width: 0 0 2px 0;
+  border-radius: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 4vh;
+  width: 40vh;
+  font-size: 2.5vh;
+  font-weight: 400;
+  color: #06283D;
+  font-family: inherit;
+}
+.search-bar input:active{
+  border-width: 0 0 2px 0;
+  border-color: #ddf4ff;
+}
+
+
+.locationIcon{
+  fill: #06283D;
+  width: 5vh;
+  height: 5vh;
+  background-color: #ddf4ff;
+  padding: 0.7vh;
+  border-radius: 100%;
+}
+
+.search-button{
+  cursor: pointer;
+  fill: #06283D;
+  width: 5vh;
+  height: 5vh;
+  background-color: #ddf4ff;
+  padding: 0.7vh;
+  border-radius: 100%;
+  transition: all ease 300ms;
+}
+
+.search-button:hover{
+  fill: #ddf4ff;
+  background-color: #06283D;
+} 
+.weatherImg{
+  width: 30vh;
+  height: 30vh;
+}
+.notFoundImg{
+  width: 42vh;
+  height: 38vh;
+  margin-top: 6vh;
+}
+.notFoundText{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  color: #06283D;
+}
+.notFoundTextContainer{
+  margin-top: 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  border-radius: 18px;
+  border-width: 4px;
+  border-color: #06283D;
+  border: solid;
+}
+.weatherContainerOff{
+  opacity: 0;
+  text-align: center;
+}
+.weatherContainerOn{
+  transition: opacity 500ms;
+  opacity: 1;
+  text-align: center;
+}
+.temperature{
+  display: flex;
+  justify-content: center;
+  margin-left: 6vh;
+  
+}
+.degrees{
+  color: #06283D;
+  font-size: 8rem;
+  font-weight: 400;
+  text-align: center;
+}
+.weatherDescription{
+  color: #06283D;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.degreeSymbol{
+  color: #06283D;
+  margin-top: 2vh;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.weatherParamsContainer{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6vh;
+}
+.otherWeatherParams{
+  display: flex;
+}
+.weatherParamsIcon{
+  color: #06283D;
+  width: 5vh;
+  height: 5vh;
+  margin-right: 1vh;
+}
+.weatherParamValue{
+  color: #06283D;
+  font-weight: 700;
+  font-size: 3vh;
+}
+.weatherParamsText{
+  color: #06283D;
+  font-weight: 400;
+  font-size: 2vh;
+}
