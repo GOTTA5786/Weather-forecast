@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Search from "./components/Search";
 import WeatherInfo from "./components/WeatherInfo";
 
-export default function page() {
+export default function Page() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState();
   let weatherData = {};
