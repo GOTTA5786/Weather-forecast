@@ -2,12 +2,6 @@ import React, { useEffect, useLayoutEffect, useState } from "react";
 
 import { BsWind, BsWater } from "react-icons/bs";
 
-// import Clear from "../../../public/Clear.png";
-// import Clouds from "../../../public/Clouds.png";
-// import Mist from "../../../public/Mist.png";
-// import NotFound from "../../../public/NotFound.png";
-// import Rain from "../../../public/Rain.png";
-// import Snow from "../../../public/Snow.png";
 
 export default function WeatherInfo({ weatherData }) {
   const [transition, setTransition] = useState(false);
@@ -22,29 +16,6 @@ export default function WeatherInfo({ weatherData }) {
     }, 300);
   }, [transition]);
 
-  // switch (weatherData.weather) {
-  //   case "Clouds":
-  //     weatherData.weather = Clouds;
-  //     break;
-  //   case "Clear":
-  //     weatherData.weather = Clear;
-  //     break;
-  //   case "Mist":
-  //     weatherData.weather = Mist;
-  //     break;
-  //   case "Rain":
-  //     weatherData.weather = Rain;
-  //     break;
-  //   case "Snow":
-  //     weatherData.weather = Snow;
-  //     break;
-  //   case "Drizzle":
-  //     weatherData.weather = Rain;
-  //     break;
-  //   case "Thunderstorm":
-  //     weatherData.weather = Rain;
-  //     break;
-  // }
   if (weatherData.status === "404") {
     return (
       <div
